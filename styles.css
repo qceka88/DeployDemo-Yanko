@@ -2,200 +2,119 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    display: block;
 }
 
 html {
-    font: 12px/1.5 "PT Serif", "PT Sans", sans-serif;
+    font: 15px/1.5 "Inter", sans-serif;
 }
 
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-
-}
 
 body {
-    width: 100%;
-    margin: 0 auto;
-    background-image: url("../images/background.jpg");
-    background-size: 100% auto;
-    background-position: center top;
-    background-repeat: no-repeat;
+    background: url("../images/background.jpg") no-repeat;
+    background-size: cover;
 }
 
+.container {
+    width: 75vw;
+    margin: 0 auto;
+    transform: translate(0, 8%);
+}
 
-.home-section {
+.container .forum {
+    display: flex;
+    gap: 2em;
+}
+
+.forum .left-section,
+.forum .right-section {
     display: flex;
     flex-direction: column;
-    color: #fdfdfe;
-    height: 60em;
+}
+
+.forum .right-section {
 
 }
 
-.navigation-bar {
+.forum .left-section {
+    gap: 2em;
+    flex: 1 0 63%;
+
+
+}
+
+.forum .left-section > .card,
+.forum .right-section > .card {
+    flex: 1 0 auto;
+}
+
+.forum .card {
+    background-color: #fdfdfe;
+    padding: 3.5em 2.2em 2em 2.2em;
     display: flex;
-    justify-content: space-between;
-    margin: 1em;
-}
-
-.navigation-bar .logo img {
-    width: 6.5em;
-    margin: 0 2em;
-}
-
-.navigation-bar nav {
-    padding-right: 2em;
-}
-
-.navigation-bar nav ul {
-    display: flex;
+    flex: 1 0 auto;
     gap: 3em;
-    padding-top: 1em;
-    padding-right: 1.5em;
 }
 
-.navigation-bar nav ul li a {
-    color: #f2f1fe;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: "PT Sans", serif;
-}
-
-.hero-section {
-    margin: 3em 15em;
-}
-
-.hero-section h1 {
-    font-size: 54px;
-    font-weight: 100;
-    line-height: 1.2em;
-}
-
-.hero-section p {
-    font-family: "PT Sans", serif;
-    width: 55%;
-    font-size: 20px;
-    line-height: 1.5em;
-    padding-top: 1em;
-}
-
-.main-section {
-    background-color: white;
-    padding: 10em 19em 0 15em;
-}
-
-.main-section .main-data {
-    display: flex;
-    gap: 5em;
-    padding-bottom: 8em;
-}
-
-.main-section .main-data .main-element {
+.card .card-data {
     display: flex;
     flex-direction: column;
+    gap: 1em;
+    flex: 1 1 auto;
 }
 
-.main-section h1 {
-    font-size: 3.7em;
-    font-weight: 100;
-}
-
-.main-section p {
-    font-family: "PT Sans", serif;
-    font-size: 1.3em;
-    line-height: 1.6em;
-    margin: 1em 0 2em;
-}
-
-.main-section .main-data .main-element a {
-    font-family: "PT Sans", serif;
-    padding: 0.8em 1em;
-    border: 1px solid #af815c;
-    color: #af815c;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    width: 25%;
-}
-
-.first-hr {
-    border: 0.5px solid #cbcbcb;
-    width: 98.84vw;
-    margin-left: -14.9em;
-}
-
-.main-section .main-partners,
-.main-section .main-sponsors {
-    text-align: center;
-    margin: 5em auto;
-}
-
-.main-section .main-partners h1,
-.main-section .main-sponsors h1 {
-    color: #af815c;
-}
-
-.main-section .main-sponsors .sponsors-media {
-    margin: 0 auto;
+.forum .card .card-media {
     display: flex;
-    justify-content: center;
+    flex: 1 1 30%;
     width: 100%;
-    gap: 5em;
 }
 
-.main-section .main-sponsors .sponsors-media .sponsor-image {
-    width: 15%;
-    height: auto;
-    background-color: #dcdcdc;
+.forum .card .card-media .image-holder {
+    width: 12em;
+    height: 12em;
     border-radius: 50%;
-    margin-top: 3em;
+    overflow: hidden;
+    margin: auto auto;
 }
 
-.sponsor-image img {
+.card-media .image-holder img {
     display: block;
-    margin: 0 auto;
     width: 100%;
     height: auto;
-    padding: 2em;
 }
 
-
-.bottom-section {
-    background-color: #171720;
-    color: #fdfdfe;
-    display: flex;
+.right-section .card {
     flex-direction: column;
-    padding: 0 15em;
-
+    padding: 3.5em 1.9em 2em 1.9em;
 }
 
-.bottom-section section {
-    display: flex;
-    margin: 4em 0;
-    gap: 10em;
+.right-section .card .card-data {
+    gap: 4em;
+    padding-bottom: 4em;
+    padding-top: 2em;
 }
 
-.bottom-section section .bottom-element h1 {
-    font-size: 1.6em;
-    padding-bottom: 2em;
+.right-section .card .card-media {
+    border-top: 1px solid #d8d8d8;
+    padding-top: 1em;
 }
 
-.bottom-section section .bottom-element p {
-    color: #b2a5a7;
-    text-transform: uppercase;
-    line-height: 3.5em;
+.right-section .card .card-media .media-data {
+    padding: 1em;
 }
 
-.second-hr {
-    border: 0.5px solid #3a3a41;
-    width: 98.84vw;
-    margin-left: -14.9em;
+.right-section .card .card-media .image-holder {
+    width: 6em;
+    height: 6em;
+    margin: 0;
 }
 
+.left-section > .card:first-of-type .card-media .image-holder > img,
+.right-section > .card .card-media .image-holder > img {
+    position: relative;
+    top: -1.5em;
+}
 
-.bottom-section footer p {
-    margin: 1.5em 0;
-
+.left-section .card .card-data {
+    position: relative;
+    top: 2em;
 }
