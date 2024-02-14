@@ -73,7 +73,7 @@ main {
 }
 
 main .hero-section {
-    background-image: url("../03-Cinema/images/background.jpg");
+    background-image: url("../images/background.jpg");
     height: 40em;
     background-size: 100% auto;
     background-position: center -4.5em;
