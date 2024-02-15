@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
 * {
     padding: 0;
     margin: 0;
@@ -5,168 +7,115 @@
 }
 
 html {
-    font: 15px/1.5 "Ubuntu", sans-serif;
+    font: 15px/1.5 "Inter", sans-serif;
+}
+
+body {
+    background: #d8d8d8;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-}
-
-header {
+    max-width: 1600px;
+    margin: 3em auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #fdfdfe;
-    margin: 1em 2em 1.5em 2em;
-    z-index: 1000;
+    gap: 2.66em;
 }
 
-.site-logo {
-    display: flex;
-    place-content: baseline;
-    flex-wrap: wrap;
-
-}
-
-.site-logo h1 {
-    border-right: 1px solid #dadada;
-    padding-right: 0.4em;
-    font-size: 2.5em;
-}
-
-.site-logo p {
-    color: #7f7f80;
-    font-size: 0.8em;
-    vertical-align: bottom;
-    padding: 2.5em 2em 0 2em;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 1em
-}
-
-nav ul li a {
-    background-color: #ebebeb;
-    padding: 1.2em;
-    margin: 1em 0.1em;
-}
-
-
-nav ul li:first-child a {
-    background-color: #56dab0;
-    color: black;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #696969;
-}
-
-main {
+.card {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-
+    box-shadow: 0.6em 0.5em 1em 0.3em rgba(0, 0, 0, 0.23);
+    max-width: 33.75em;
+    flex: 1 1 auto;
 }
 
-main .hero-section {
-    background-image: url("../images/background.jpg");
-    height: 40em;
-    background-size: 100% auto;
-    background-position: center -4.5em;
-    background-repeat: no-repeat;
+.card .card-media {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.card .card-media .image-enterprice {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+}
+
+.image-enterprice img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card:nth-child(2) .image-enterprice img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.author-image {
+    flex: 1 1 20%;
+    width: 20%;
+}
+
+.author-image img {
+    width: 100%;
+    height: auto;
+    display: block;
     position: relative;
+    top: -15px;
 }
 
-main .hero-section p {
-    background-color: #56DAB0FF;
-    text-align: center;
-    padding: 4em 10em;
+.card .card-information {
+    flex: 0 1 auto;
+    padding: 0 2.66em 2.66em;
+}
+
+.card .card-information h3 {
+    padding-bottom: 0.8em;
+    color: #595959;
+    letter-spacing: 0.9px;
+}
+
+.card .card-information h1 {
+    font-size: 1.76em;
+    font-weight: 400;
+    padding-bottom: 1.7rem;
+}
+
+.card .card-information > p {
+    color: #595959;
+    padding-bottom: 2.66em;
+}
+
+.card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1.5px solid black;
+    padding-top: 1em;
     vertical-align: center;
-    position: absolute;
-    bottom: -3em;
-    width: 100%;
 }
 
-.final-section,
-.awesome-section {
-    background: #353434;
+.card .card-footer > p {
+    margin: auto 0;
+    color: #595959;
+}
+
+.card .card-footer .author {
     display: flex;
-    padding: 6em;
+    gap: 0.7em;
+    justify-content: center;
 }
 
-.element {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 1em;
-    gap: 1em;
+.card .card-footer .author p {
+    margin: auto;
+
 }
 
-.element span {
-    text-align: center;
-    font-size: 25px;
-}
-
-.element span i {
-    padding: 0.5em;
-    color: #fdfdfe;
-    background: #56dab0;
-}
-
-.element h4 {
-    color: #fdfdfeff;
-    border-bottom: 1px solid #5b5956;
-    padding-bottom: 1em;
-}
-
-.element h2 {
-    color: #fdfdfeff;
-}
-
-.element p {
-    color: #5b5956;
-}
-
-.middle-section {
-    margin: 5em;
-    flex: auto;
-    text-align: center;
-}
-
-.middle-section h1 {
-    color: #5f5f5f;
-}
-
-.middle-section p {
-    color: #c2bbb7;
-    margin-bottom: 2.3em;
-}
-
-.middle-section a {
-    padding: 1em 2em;
-    background: #964d1b;
-    text-decoration: none;
-    color: #fbfdfe;
-}
-
-footer {
-    background-color: #1b9672;
-    text-align: center;
-    padding: 3em;
-}
-
-footer p {
-    color: #59dbb0;
-    letter-spacing: 2px;
-    font-size: 14px;
-}
-
-footer p span {
-    color: white;
-    font-weight: bold;
-
+.card .card-footer .author .author-image {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    aspect-ratio: 1/1;
 }
