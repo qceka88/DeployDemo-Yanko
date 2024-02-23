@@ -1,0 +1,7 @@
+-- Monitor --
+Diagonal: 15.6"
+Resolution: 1920x1080
+Scale: 100%
+_________________________________
+-- Browser --
+Scale: 100%

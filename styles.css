@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap");
 
 * {
     padding: 0;
@@ -7,115 +8,260 @@
 }
 
 html {
-    font: 15px/1.5 "Inter", sans-serif;
+    font: 18px/1.5 "Karla", sans-serif;
 }
 
-body {
-    background: #d8d8d8;
+h1 {
+    font: 90px/1.5 "Cormorant", serif;
+    font-weight: 6700;
 }
 
 .container {
-    max-width: 1600px;
-    margin: 3em auto;
-    display: flex;
-    gap: 2.66em;
+    width: 1100px;
+    margin: 0 auto;
 }
 
-.card {
+.hero-background {
+    background-image: url("../images/poster.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0;
+}
+
+.hero-section {
     display: flex;
     flex-direction: column;
-    box-shadow: 0.6em 0.5em 1em 0.3em rgba(0, 0, 0, 0.23);
-    max-width: 33.75em;
-    flex: 1 1 auto;
-}
-
-.card .card-media {
-    flex: 1 1 auto;
-    display: flex;
-}
-
-.card .card-media .image-enterprice {
-    display: block;
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 0;
     width: 100%;
-    height: 90%;
+    height: 43em;
 }
 
-.image-enterprice img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.card:nth-child(2) .image-enterprice img {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.author-image {
-    flex: 1 1 20%;
-    width: 20%;
-}
-
-.author-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
-    top: -15px;
-}
-
-.card .card-information {
-    flex: 0 1 auto;
-    padding: 0 2.66em 2.66em;
-}
-
-.card .card-information h3 {
-    padding-bottom: 0.8em;
-    color: #595959;
-    letter-spacing: 0.9px;
-}
-
-.card .card-information h1 {
-    font-size: 1.76em;
-    font-weight: 400;
-    padding-bottom: 1.7rem;
-}
-
-.card .card-information > p {
-    color: #595959;
-    padding-bottom: 2.66em;
-}
-
-.card .card-footer {
+.hero-section nav {
     display: flex;
     justify-content: space-between;
-    border-top: 1.5px solid black;
-    padding-top: 1em;
-    vertical-align: center;
+    padding: 1.2em 4em;
+
 }
 
-.card .card-footer > p {
-    margin: auto 0;
-    color: #595959;
-}
-
-.card .card-footer .author {
+.hero-section nav .logo {
     display: flex;
-    gap: 0.7em;
-    justify-content: center;
+    flex: 1 1 auto;
+    height: auto;
 }
 
-.card .card-footer .author p {
+
+.hero-section nav .logo img {
+    width: 112px;
+    height: 63px;
+}
+
+.hero-section nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    padding-right: 2em;
+}
+
+.hero-section nav ul li {
     margin: auto;
+}
+
+.hero-section nav ul a {
+    text-decoration: none;
+    color: #fdfdfe;
 
 }
 
-.card .card-footer .author .author-image {
-    overflow: hidden;
-    border-radius: 50%;
+.hero-section .company-moto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: #fdfdfe;
+    padding-top: 13em;
+    text-align: center;
+}
+
+.hero-section .company-moto {
+    letter-spacing: 2px;
+    display: flex;
+}
+
+
+.hero-section .company-moto p {
+    padding-top: 5em;
+    width: 40em;
+}
+
+.customer-testimonial-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0 7.5em;
+    margin: 0 auto;
+    background-color: #f7efe8;
+}
+
+.customer-testimonial-section h1 {
+    font-family: "Cormorant Infant", serif;
+    font-size: 70px;
+    font-style: italic;
+    line-height: 0.8;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.customer-testimonial-section p {
+    padding-bottom: 4em;
+}
+
+.support-section {
+    background-color: #e04747;
+    color: #fdfdfe;
+    margin: 0 auto;
+}
+
+.support-section .container {
+    width: 20em;
+    padding: 3.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 3em;
+    margin: auto;
+}
+
+.mind-section {
+    background-color: #f7efe8;
+    padding: 4.5em;
+}
+
+.mind-section .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 35em;
+    gap: 4em;
+}
+
+.mind-section .mind-media {
+    flex: 1 0 auto;
+}
+
+.mind-image {
+    width: 35em;
+}
+
+.mind-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mind-section .mind-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    text-align: start;
+}
+
+.mind-data h1 {
+    font-family: "Cormorant Infant", serif;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+}
+
+
+.mind-data p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding-right: 2em;
+    line-height: 1.4;
+    width: 95%;
+}
+
+.mind-data .button.white {
+    margin: 0 auto 0 0;
+}
+
+.guide-section {
+    background-color: #e04747;
+    color: #fdfdfe;
+    text-align: center;
+    padding: 5em;
+}
+
+.guide-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.guide-section h1 {
+    font-size: 70px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: bold;
+}
+
+.guide-section p:first-of-type {
+    margin-bottom: 2em;
+}
+
+/* Buttons Main Settings */
+.button {
+    text-decoration: none;
+    padding: 0.6em 1.3em;
+    margin: 0 auto;
+}
+
+.button.white {
+    background-color: #fdfdfe;
+    color: #000001;
+    border-radius: 0.3em;
+    border: 1px solid;
+}
+
+.button.yellow {
+    font-size: 15px;
+    background-color: #f9d77a;
+    color: #000001;
+    padding: 1rem 1.3rem;
+    border-radius: 3.5rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #352b2a;
+    color: #fdfdfe;
+    padding: 3em 8em 3em;
+}
+
+.footer-section .logo {
     width: 4em;
-    height: 4em;
-    aspect-ratio: 1/1;
+    height: auto;
+}
+
+.footer-section .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer-section p {
+    font-size: 14px;
+    padding: 2em 0 1em;
+    width: 28em;
+}
+
+.footer-section span {
+    font-size: 12px;
+    color: #766968;
 }
